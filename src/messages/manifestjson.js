@@ -40,6 +40,14 @@ export const MANIFEST_VERSION_INVALID = {
   file: MANIFEST_JSON,
 };
 
+export const INVALID_KEY = {
+  code: 'INVALID_KEY',
+  message: _('UnKnown or Invalid key '),
+  description: _('An unexpected property was found in the WebExtension manifest'),
+  file: MANIFEST_JSON,
+};
+
+
 export const MANIFEST_CSP = {
   // Note: don't change this 'code' without updating addons-server first, as
   // it depends on it to detect add-ons with a custom content security policy.

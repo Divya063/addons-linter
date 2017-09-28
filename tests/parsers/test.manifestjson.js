@@ -204,7 +204,7 @@ describe('ManifestJSONParser', () => {
       const parser = new ManifestJSONParser(validManifestJSON(),
         addonLinter.collector);
       const message = parser.errorLookup({ dataPath: '', keyword: 'type' });
-      expect(message.code).toEqual(messages.MANIFEST_FIELD_INVALID.code);
+      expect(message.code).toEqual(messages.INVALID_KEY.code);
     });
 
     it('should return permission for wrong type', () => {
